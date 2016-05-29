@@ -13,6 +13,7 @@ This project is a little web/rest application using Slim Framework 2, acting lik
 # Calling from others language
 1. Python
 
+```python
 
     def subscribe(self, email='', fname='', lname='', list=''):
         params = {'email': email, 'fname': fname, 'lname': lname, 'list': list}
@@ -50,9 +51,12 @@ This project is a little web/rest application using Slim Framework 2, acting lik
 
         if response.status_code != 200:
             raise HttpRequestException(response.status_code)
+            
+```
 
 2. DotNet using RestSharp
 
+```csharp
 
     var client = new RestClient("http://localhost");
 
@@ -69,3 +73,4 @@ This project is a little web/rest application using Slim Framework 2, acting lik
     IRestResponse response = client.Execute(request);
     var content = response.Content; // raw content as string
 
+```
