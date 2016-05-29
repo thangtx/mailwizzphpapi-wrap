@@ -51,7 +51,7 @@ class APIAuthMiddleware extends \Slim\Middleware
         }
         
         $config = new MailWizzApi_Config(array(
-            'apiUrl' => 'https://news.jamja.vn/api/index.php',
+            'apiUrl' => 'https://localhost/api/index.php',
             'publicKey' => $this->_publicKey, 
             'privateKey' => $this->_privateKey,
 
